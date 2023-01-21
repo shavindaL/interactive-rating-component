@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+h1 {
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h5 {
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#root {
+  height: 1440px;
+  background-color: #000;
+  font-family: 'Overpass', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#star-container {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(217, 12%, 63%);
+  border-radius: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+#star {
+  position: relative;
+  margin-top: 11px;
+  margin-left: 11px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#submit-btn {
+  padding: 10px 100px;
+  border: none;
+  border-radius: 100px;
+  background-color: hsl(25, 97%, 53%);
+  color: #FFF;
+}
+
+#submit-btn:hover {
+  padding: 10px 100px;
+  border: none;
+  border-radius: 100px;
+  background-color: #FFF;
+  color: hsl(25, 97%, 53%);
+}
+
+.btn-container {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 40px;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  color: #FFF;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+
+.btn-container .btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #FFF;
+}
+
+.btn-container {
+  margin: 10px 5px;
+}
+
+#btn-container:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+#ratings {
+  /* position: relative; */
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  color: #FFF;
+  background: rgb(37, 45, 55);
+  background: linear-gradient(180deg, rgba(37, 45, 55, 1) 25%, rgba(36, 44, 57, 1) 50%, rgba(18, 20, 23, 1) 75%);
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
 }
