@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "./button";
+import RatingButtons from "./button";
+import '../styles/ratingCard.css';
 
 function RatingCard() {
 
@@ -13,18 +14,14 @@ function RatingCard() {
                 to help us improve our offering!
             </h5>
 
-            <div id="rating-container">
-                <div id="ratings">
-                    <Button value={1} />
-                    <Button value={2} />
-                    <Button value={3} />
-                    <Button value={4} />
-                    <Button value={5} />
+            <form onSubmit={'/thanks'}>
+                <div>
+                    <RatingButtons />
+                    <div id="submit-container">
+                        <button type='submit' id="submit-btn">Submit</button>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <button id="submit-btn">Submit</button>
-            </div>
+            </form>
 
             {/* <!-- Rating state end --> */}
 

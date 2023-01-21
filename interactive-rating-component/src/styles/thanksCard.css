@@ -1,0 +1,33 @@
+p{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.thank-card {
+    color: #FFF;
+    background: hsl(216, 12%, 8%);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 40px;
+}
+
+.thank-card div{ 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.selection{
+    margin: 10px auto;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 60px;
+    color: hsl(25, 97%, 53%);
+}

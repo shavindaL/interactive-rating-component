@@ -1,19 +1,38 @@
 import React from "react";
+import '../styles/thanksCard.css';
 
 function ThankCard() {
 
+    const rating = 4;
+
     return (
         <>
-            {/* <!-- Thank you state start --> */}
+            <div className='thank-card'>
+                {/* <!-- Thank you state start --> */}
 
-            You selected {/**<!-- Add rating here -->**/} out of 5
+                <div>
+                    <img src='../images/illustration-thank-you.svg' alt=""/>
+                </div>
 
-            Thank you!
+                <div className="selection">
+                    <p>You selected {rating} out of 5</p>
+                </div>
 
-            We appreciate you taking the time to give a rating. If you ever need more support,
-            don’t hesitate to get in touch!
+                <div>
+                    <h2>Thank you!</h2>
+                </div>
 
-            {/* <!-- Thank you state end --> */}
+                <div>
+                    <p>
+                        We appreciate you taking the time to give a rating. If you ever need more support,
+                        don’t hesitate to get in touch!
+                    </p>
+                </div>
+
+                {/* <!-- Thank you state end --> */}
+            </div>
         </>
     )
 }
+
+export default ThankCard;
