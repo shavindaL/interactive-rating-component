@@ -13,9 +13,9 @@ function RatingCard() {
             <div id="star-container"><img id="star" src={process.env.PUBLIC_URL + "/images/icon-star.svg"} alt="star-icon" /></div>
             <h1>How did we do?</h1>
 
-            <h5> Please let us know how we did with your support request. All feedback is appreciated
+            <p id="heading5"> Please let us know how we did with your support request. All feedback is appreciated
                 to help us improve our offering!
-            </h5>
+            </p>
 
             <form onSubmit={() => {
                 navigate('/thanks', { state: { rating: userRating } })

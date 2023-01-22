@@ -25,7 +25,7 @@ function ThankCard() {
                 </div>
 
                 <div>
-                    <p>
+                    <p id="para">
                         We appreciate you taking the time to give a rating. If you ever need more support,
                         don’t hesitate to get in touch!
                     </p>
