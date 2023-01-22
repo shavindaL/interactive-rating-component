@@ -52,7 +52,7 @@ function RatingButtons(props) {
     return (
         <>
             <div id="rating-container">
-                <div class="btn-container">
+                <div className="btn-container">
                     <button type="button" className={btn1} onClick={() => { setSelected(1); }}>
                         1
                     </button>

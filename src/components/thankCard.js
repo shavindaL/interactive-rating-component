@@ -13,7 +13,7 @@ function ThankCard() {
                 {/* <!-- Thank you state start --> */}
 
                 <div>
-                    <img src='../images/illustration-thank-you.svg' alt=""/>
+                    <img src= {process.env.PUBLIC_URL+'/images/illustration-thank-you.svg'} alt="thank you img"/>
                 </div>
 
                 <div className="selection">
