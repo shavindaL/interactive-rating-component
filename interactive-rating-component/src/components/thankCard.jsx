@@ -1,9 +1,11 @@
 import React from "react";
 import '../styles/thanksCard.css';
+import { useLocation } from "react-router-dom";
 
 function ThankCard() {
 
-    const rating = 4;
+    const {state} = useLocation();
+    const {rating} = state;
 
     return (
         <>

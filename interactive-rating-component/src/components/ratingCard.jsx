@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import RatingButtons from "./button";
 import '../styles/ratingCard.css';
+import { useNavigate } from "react-router-dom";
 
 function RatingCard() {
 
+    const [userRating,setUserRating] = useState();
+    const navigate = useNavigate();
     return (
         <div className="card">
             {/* <!-- Rating state start --> */}
@@ -14,9 +17,11 @@ function RatingCard() {
                 to help us improve our offering!
             </h5>
 
-            <form onSubmit={'/thanks'}>
+            <form onSubmit={()=>{
+                navigate('/thanks', {state:{rating:userRating}})
+            }}>
                 <div>
-                    <RatingButtons />
+                    <RatingButtons rating={setUserRating}/>
                     <div id="submit-container">
                         <button type='submit' id="submit-btn">Submit</button>
                     </div>
